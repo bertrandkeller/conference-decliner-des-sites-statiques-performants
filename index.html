@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' />
+  <title>big</title>
+  <link href='big.css' rel='stylesheet' type='text/css' />
+  <link href='highlight.css' rel='stylesheet' type='text/css' />
+  <style>
+    .new-shiny { background: #aaaaaa; }
+  </style>
+  <script src='big.js'></script>
+  <script src='highlight.js'></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+</head>
+<body class='light'>
+  <div><p>Décliner des sites statiques <strong>performants</strong> avec <strong>un GSS</strong> (Jekyll, Hugo…) </p>
+</div>
+<div><h2 id="fonctionnement">Fonctionnement</h2>
+<ol>
+<li>Un ordinateur avec réseau et compte github</li>
+<li>Équipe de 2 minimum</li>
+<li>Travail collaboratif</li>
+</ol>
+</div>
+<div><h2 id="les-sites-statiques-en-2-mots">Les sites statiques en 2 mots</h2>
+</div>
+<div><p>Pas de charge inutile sur une BDD (Recherche de failles par des crackers), <em>portabilité</em> des contenus, versionning, export multi-formats, <em>modularité</em> du contenu…</p>
+</div>
+<div><h2 id="placement-produits-inside">Placement produits inside</h2>
+</div>
+<div><div>
+<img src="/images/company.png" class="center-image" />
+</div>
+</div>
+<div><div>
+<img src="/images/staticgen-full.png"  class="center-image"/>
+</div>
+
+</div>
+<div><div>
+<img src="/images/staticgen.png"  class="center-image"/>
+</div>
+</div>
+<div><h2 id="jekyll">Jekyll</h2>
+<p><strong>RUBY</strong> - <small>Plein de plugins, compilation SASS native, complet et compatible avec la plupart des services d&#39;édition de contenu…</small></p>
+</div>
+<div><h2 id="hugo">Hugo</h2>
+<p><strong>GO</strong> - <small>Pas de plugins, très rapide, <em>livereload</em>, moteur de template très puissant…</small></p>
+</div>
+<div><h2 id="jamstatic-fr">jamstatic.fr</h2>
+</div>
+<div><h2 id="objectifs-de-cet-atelier">Objectifs de cet atelier</h2>
+</div>
+<div><p>1 - Simple ?</p>
+</div>
+<div><p>2 - Utilisable par un rédacteur ?</p>
+</div>
+<div><p>3 - Plus rapide ?</p>
+</div>
+<div><p>Let&#39;s go static !</p>
+</div>
+<div><div>
+<img src="/images/static-site-JAMstack.png"  class="center-image"/>
+</div>
+</div>
+<div><h2 id="plugins-jekyll-disponibles-sur-github-pages">Plugins Jekyll disponibles sur Github Pages</h2>
+<pre><code>  # Plugins
+  &quot;jekyll-redirect-from&quot;         =&gt; &quot;0.12.1&quot;, # Seamlessly specify multiple redirections URLs
+  &quot;jekyll-sitemap&quot;               =&gt; &quot;0.12.0&quot;, # Generate a sitemaps.org compliant sitemap
+  &quot;jekyll-feed&quot;                  =&gt; &quot;0.8.0&quot;,  # Generate an Atom (RSS-like) feed
+  &quot;jekyll-gist&quot;                  =&gt; &quot;1.4.0&quot;,  # Liquid tag for displaying GitHub Gists
+  &quot;jekyll-paginate&quot;              =&gt; &quot;1.1.0&quot;,  # Default pagination generator for Jekyll.
+  &quot;jekyll-coffeescript&quot;          =&gt; &quot;1.0.1&quot;,  # A CoffeeScript converter for Jekyll
+  &quot;jekyll-seo-tag&quot;               =&gt; &quot;2.1.0&quot;,  # Add metadata tags for search engines and social networks
+  &quot;jekyll-github-metadata&quot;       =&gt; &quot;2.3.1&quot;,  # Propagate the site.github namespace
+  &quot;jekyll-avatar&quot;                =&gt; &quot;0.4.2&quot;,  # A Jekyll plugin for rendering GitHub avatars
+
+  # Plugins to match GitHub.com Markdown
+  &quot;jemoji&quot;                       =&gt; &quot;0.8.0&quot;,  # GitHub-flavored Emoji plugin for Jekyll
+  &quot;jekyll-mentions&quot;              =&gt; &quot;1.2.0&quot;,  # @mention support for your Jekyll site
+  &quot;jekyll-relative-links&quot;        =&gt; &quot;0.3.0&quot;,  # Convert relative links to markdown files to their rendered equivalents
+  &quot;jekyll-optional-front-matter&quot; =&gt; &quot;0.1.2&quot;,  # Make front matter optional for Markdown files
+  &quot;jekyll-readme-index&quot;          =&gt; &quot;0.0.4&quot;,  # Render a project&#39;s README as the site&#39;s index
+  &quot;jekyll-default-layout&quot;        =&gt; &quot;0.1.4&quot;,  # Silently sets default layouts for pages and posts
+  &quot;jekyll-titles-from-headings&quot;  =&gt; &quot;0.1.4&quot;,  # Pull the page title from the first Markdown heading
+</code></pre></div>
+<div><ol>
+<li><strong>Page d&#39;accueil</strong> :: variable titre site et titre page</li>
+<li>Un <strong>menu</strong> de pages</li>
+<li>Liste d&#39;<strong>actualités</strong></li>
+</ol>
+</div>
+<div><ol>
+<li>Collection des <strong>thèmes</strong> des conférences de Paris-Web</li>
+<li>Gallerie d&#39;images</li>
+<li>Listes des conférenciers de Paris-Web 2017</li>
+</ol>
+</div>
+<div><h2 id="starter-kit">Starter Kit</h2>
+</div>
+<div><p><a href="https://github.com/luclemo/jekyll-starter">https://github.com/luclemo/jekyll-starter</a>
+<a href="https://github.com/csuarez/hugo-gulp-template">https://github.com/csuarez/hugo-gulp-template</a></p>
+</div>
+<div><h2 id="formulaires">Formulaires</h2>
+</div>
+<div><p><a href="https://posativ.org/isso/">https://posativ.org/isso/</a><br><a href="https://staticman.net/">https://staticman.net/</a><br><a href="https://formkeep.com/">https://formkeep.com/</a><br><a href="https://formspree.io/">https://formspree.io/</a>  </p>
+</div>
+<div><h2 id="recherche">Recherche</h2>
+</div>
+<div><p><a href="https://github.com/daviddarnes/jekyll-search-js">https://github.com/daviddarnes/jekyll-search-js</a><br><a href="http://elasticlunr.com/">http://elasticlunr.com/</a><br><a href="http://tapirgo.com/">http://tapirgo.com/</a>  </p>
+</div>
+<div><h2 id="headless-cms">Headless CMS</h2>
+</div>
+<div><p><a href="http://prose.io">http://prose.io</a>
+<a href="https://graphcms.com/">https://graphcms.com/</a>
+<a href="https://getcockpit.com/">https://getcockpit.com/</a>
+<a href="https://kenticocloud.com/">https://kenticocloud.com/</a></p>
+</div>
+<div><h2 id="performance">Performance</h2>
+</div>
+<div><p><a href="https://www.netlify.com/docs/redirects/">https://www.netlify.com/docs/redirects/</a>
+<a href="https://www.netlify.com/docs/headers-and-basic-auth/">https://www.netlify.com/docs/headers-and-basic-auth/</a></p>
+</div>
+<div><h2 id="protection">Protection</h2>
+</div>
+<div><p><a href="https://robinmoisson.github.io/staticrypt/">https://robinmoisson.github.io/staticrypt/</a>
+<a href="https://www.aerobatic.com/docs/plugins/password-protect/">https://www.aerobatic.com/docs/plugins/password-protect/</a>
+<a href="https://www.netlify.com/docs/headers-and-basic-auth/">https://www.netlify.com/docs/headers-and-basic-auth/</a></p>
+</div>
+<div><h2 id="authentification">Authentification</h2>
+</div>
+<div><p><a href="https://identity.netlify.com/">https://identity.netlify.com/</a></p>
+</div>
+<div><h2 id="ecommerce">Ecommerce</h2>
+</div>
+<div><p><a href="https://snipcart.com/">https://snipcart.com/</a>
+<a href="https://cartjs.com/">https://cartjs.com/</a>
+<a href="https://shopify.com/">https://shopify.com/</a></p>
+</div>
+<div><p>Let&#39;s work together</p>
+</div>
+</body>
+</html>
